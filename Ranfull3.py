@@ -54,13 +54,11 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# URL directa desde GitHub para cargar la imagen
+# URL directa de la imagen en GitHub
 image_url = 'https://raw.githubusercontent.com/Erwinwga/tercera/main/agaleatorio.jpg'
 
-# Opción sin usar requests
-#st.image(image_url, caption="Este programa es propiedad de AGBROTHERS", width=800)
-
-#st.image(image, caption="Este programa es propiedad de AGBROTHERS", width=800)
+# Mostrar la imagen usando Streamlit
+st.image(image_url, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
 # Inicializar session_state para cada panel
 if "panel1_data" not in st.session_state:
