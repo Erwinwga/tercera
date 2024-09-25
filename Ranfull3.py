@@ -53,10 +53,11 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# Cargar la imagen desde GitHub (URL directa)
+# URL directa desde GitHub para cargar la imagen
 image_url = 'https://raw.githubusercontent.com/Erwinwga/tercera/main/agaleatorio.jpg'
-response = requests.get(image_url)
-image = Image.open(BytesIO(response.content))
+
+# Opción sin usar requests
+st.image(image_url, caption="Este programa es propiedad de AGBROTHERS", width=800))
 
 st.image(image, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
