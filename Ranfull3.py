@@ -60,7 +60,7 @@ image_url = 'https://raw.githubusercontent.com/Erwinwga/tercera/main/agaleatorio
 # Opción sin usar requests
 #st.image(image_url, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
-st.image(image, caption="Este programa es propiedad de AGBROTHERS", width=800)
+#st.image(image, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
 # Inicializar session_state para cada panel
 if "panel1_data" not in st.session_state:
