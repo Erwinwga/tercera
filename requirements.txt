@@ -3,5 +3,5 @@ numpy
 pandas
 plotly
 pillow
-streamlit
 requests
+BytesIO
