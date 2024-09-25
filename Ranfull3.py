@@ -53,8 +53,11 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-# Cargar la imagen desde la ubicación especificada
-image = Image.open('C:/Users/AGBINVESTMENTS/OneDrive/Escritorio/Ranfull/agaleatorio.jpg')
+# Cargar la imagen desde GitHub (URL directa)
+image_url = 'https://raw.githubusercontent.com/Erwinwga/tercera/main/agaleatorio.jpg'
+response = requests.get(image_url)
+image = Image.open(BytesIO(response.content))
+
 st.image(image, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
 # Inicializar session_state para cada panel
