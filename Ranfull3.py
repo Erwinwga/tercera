@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 from PIL import Image
+from io import BytesIO
 
 def formato_numero(valor):
     return f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
@@ -57,7 +58,7 @@ st.markdown(
 image_url = 'https://raw.githubusercontent.com/Erwinwga/tercera/main/agaleatorio.jpg'
 
 # Opción sin usar requests
-st.image(image_url, caption="Este programa es propiedad de AGBROTHERS", width=800))
+st.image(image_url, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
 st.image(image, caption="Este programa es propiedad de AGBROTHERS", width=800)
 
