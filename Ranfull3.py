@@ -90,7 +90,7 @@ with tabs[0]:
         ratio = st.number_input("Ratio", min_value=0.5, max_value=4.0, value=1.0, step=0.5)
 
         # Input para ingresar la cantidad de operaciones por mes
-        operaciones_por_mes = st.number_input("Operaciones por Mes", min_value=1, max_value=100, value=20)
+        operaciones_por_mes = st.number_input("Operaciones por Mes", min_value=1, max_value=500, value=20)
         
         # Input para ingresar los años de estudio
         anios_estudio = st.number_input("Años de Estudio", min_value=1, max_value=100, value=2)
